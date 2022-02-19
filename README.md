@@ -1,4 +1,2 @@
-# Desafio de Projeto sobre Git/GitHub da DIO
-Repositório criado para o desafio projeto
-
-## Meus projetos de HTML e CSS
+# Meus projetos de HTML e CSS
+Repositório criado para postar meus projetos de treino em HTML e CSS
