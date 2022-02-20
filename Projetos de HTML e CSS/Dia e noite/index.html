@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun and Moon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="center" onclick="toggleSwitch()">
+        <div class="box1">
+            <div class="shape"></div>
+        </div>
+        <div class="box2">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <script>
+        var switchStatus = "off",
+        center = document.querySelector('.center'),
+        box1 = document.querySelector('.box1'),
+        box2 = document.querySelector('.box2'),
+        shape = document.querySelector('.shape'),
+        circle = document.querySelector('.circle'),
+        body = document.querySelector('.body');
+
+        function toggleSwitch(){
+            if(switchStatus == "off"){
+
+                center.style.transform = "rotate(720deg)";
+                body.style.background = "#FFC312";
+                box1.style.background = "#fff";
+                box2.style.background = "#fff";
+                circle.style.background = "#FFC312";
+                shape.style.background = "#fff";
+                shape.style.width = "72px";
+                shape.style.height = "72px";
+                shape.style.left = "44px";
+                shape.style.bottom = "44px";
+                shape.style.borderRadius = "50%";
+
+                switchStatus = "on";
+            }else if(switchStatus == "on"){
+                
+                center.style.transform = "rotate(0deg)";
+                body.style.background = "#2c2c54";
+                box1.style.background = "#111";
+                box2.style.background = "#111";
+                circle.style.background = "#fff";
+                shape.style.background = "#111";
+                shape.style.width = "88px";
+                shape.style.height = "120px";
+                shape.style.left = "4px";
+                shape.style.bottom = "20px";
+                shape.style.borderRightRadius = "30px"; 
+
+                switchStatus= "off";
+            }
+        }
+    </script>
+</body>
+</html>
